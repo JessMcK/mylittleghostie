@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "stardust_unlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "my_little_ghostie:stardust_recipe"
+    ]
+  },
+  "parent": "minecraft:nether/root"
+}

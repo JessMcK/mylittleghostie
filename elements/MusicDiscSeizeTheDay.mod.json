@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_sieze_the_day",
+    "name": "Music Disc",
+    "description": "Newsies - Seize The Day",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:seize_the_day_newsies"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

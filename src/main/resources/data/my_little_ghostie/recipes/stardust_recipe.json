@@ -1,0 +1,36 @@
+{
+  "group": "my_little_ghostie",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:blaze_powder"
+    },
+    "3": {
+      "item": "minecraft:blaze_powder"
+    },
+    "4": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "5": {
+      "item": "minecraft:blaze_powder"
+    },
+    "6": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "7": {
+      "item": "minecraft:firework_star"
+    },
+    "8": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "my_little_ghostie:stardust",
+    "count": 1
+  }
+}

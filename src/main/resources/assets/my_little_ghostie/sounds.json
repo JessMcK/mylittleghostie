@@ -1,0 +1,42 @@
+{
+  "ghostie_hurt": {
+    "category": "master",
+    "subtitle": "subtitles.ghostie_hurt",
+    "sounds": [
+      {
+        "name": "my_little_ghostie:ghostie_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "hes_a_pirate_music_box": {
+    "category": "record",
+    "subtitle": "subtitles.hes_a_pirate_music_box",
+    "sounds": [
+      {
+        "name": "my_little_ghostie:potc_music_box_r3music",
+        "stream": true
+      }
+    ]
+  },
+  "seize_the_day_newsies": {
+    "category": "record",
+    "subtitle": "subtitles.seize_the_day_newsies",
+    "sounds": [
+      {
+        "name": "my_little_ghostie:seize_the_day",
+        "stream": true
+      }
+    ]
+  },
+  "ghostie_living_extended": {
+    "category": "master",
+    "subtitle": "subtitles.ghostie_living_extended",
+    "sounds": [
+      {
+        "name": "my_little_ghostie:ghostie_living_extended",
+        "stream": false
+      }
+    ]
+  }
+}

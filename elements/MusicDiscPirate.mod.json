@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_pirates",
+    "name": "Music Disc",
+    "description": "R3 Music Box - He's A Pirate",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:hes_a_pirate_music_box"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

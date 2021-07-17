@@ -1,0 +1,184 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "MyLittleGhostie",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "my_little_ghostie"
+    },
+    {
+      "name": "Stardust",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stardust"
+    },
+    {
+      "name": "StardustRecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stardust_recipe"
+    },
+    {
+      "name": "MyLittleGhostieSpawn",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "my_little_ghostie_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MusicDiscPirate",
+      "type": "musicdisc",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "music_disc_pirate"
+    },
+    {
+      "name": "MusicDiscSeizeTheDay",
+      "type": "musicdisc",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "music_disc_seize_the_day"
+    },
+    {
+      "name": "StardustRecipeUnlocked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stardust_recipe_unlocked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StardustUnlocked",
+      "type": "achievement",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stardust_unlocked"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "ghostie_hurt",
+      "files": [
+        "ghostie_hurt"
+      ],
+      "category": "master",
+      "subtitle": "[ghostie is hurting!]"
+    },
+    {
+      "name": "hes_a_pirate_music_box",
+      "files": [
+        "potc_music_box_r3music"
+      ],
+      "category": "record",
+      "subtitle": "He\u0027s A Pirate (music box style)"
+    },
+    {
+      "name": "seize_the_day_newsies",
+      "files": [
+        "seize_the_day"
+      ],
+      "category": "record",
+      "subtitle": "!!! Now Is The Time To Seize The Day !!!"
+    },
+    {
+      "name": "ghostie_living_extended",
+      "files": [
+        "ghostie_living_extended"
+      ],
+      "category": "master",
+      "subtitle": "[gentle ghost chiming noises]"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.ghostie_living_extended": "[gentle ghost chiming noises]",
+      "item.my_little_ghostie.my_little_ghostie_spawn_egg": "Ghostie Spawn Egg",
+      "subtitles.ghostie_living": "[gentle ghost chiming noises]",
+      "subtitles.seize_the_day_newsies": "!!! Now Is The Time To Seize The Day !!!",
+      "advancements.stardust_unlocked.descr": "Obtain three stardust and create a friend",
+      "advancements.stardust_unlocked.title": "Stardust Recipe Unlocked",
+      "entity.my_little_ghostie.my_little_ghostie": "Ghostie",
+      "item.my_little_ghostie.music_disc_seize_the_day.desc": "Newsies - Seize The Day",
+      "subtitles.hes_a_pirate_music_box": "He\u0027s A Pirate (music box style)",
+      "item.my_little_ghostie.music_disc_pirate.desc": "R3 Music Box - He\u0027s A Pirate",
+      "subtitles.ghostie_hurt": "[ghostie is hurting!]",
+      "item.my_little_ghostie.stardust": "Stardust",
+      "item.my_little_ghostie.music_disc_pirate": "Music Disc",
+      "item.my_little_ghostie.music_disc_seize_the_day": "Music Disc"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "my_little_ghostie",
+    "modName": "my little ghostie",
+    "version": "1.0.0",
+    "author": "Jessica, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.mylittleghostie",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
