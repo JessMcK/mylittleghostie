@@ -6,9 +6,12 @@ A little Minecraft mod made in MCreator. Adds a new recipe (Stardust!), 2 secret
 
 Download the [My Little Ghostie .jar file](https://github.com/JessMcK/mylittleghostie/raw/master/my_little_ghostie_fullmod.jar) (> 6MB).
 
-[Demo gif](https://raw.githubusercontent.com/JessMcK/mylittleghostie/master/ghostie_demo.gif)
+![Demo gif](https://raw.githubusercontent.com/JessMcK/mylittleghostie/master/ghostie_demo.gif)
 
-[Screenshot](https://raw.githubusercontent.com/JessMcK/mylittleghostie/master/2021-07-17_23.50.07.png)
+![Screenshot](https://raw.githubusercontent.com/JessMcK/mylittleghostie/master/2021-07-17_23.50.07.png)
+
+##### Stardust Recipe
+![Stardust recipe screenshot](https://raw.githubusercontent.com/JessMcK/mylittleghostie/master/stardust_recipe_demo_screenshot.jpg)
 
 #### Credits
 
