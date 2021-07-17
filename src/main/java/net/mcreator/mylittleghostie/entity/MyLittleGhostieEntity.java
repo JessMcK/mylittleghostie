@@ -109,9 +109,10 @@ public class MyLittleGhostieEntity extends MyLittleGhostieModElements.ModElement
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 0.8, (float) 1, (float) 2, false));
-			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.2, 20) {
+			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 8, (float) 2, false));
+			this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
+			this.goalSelector.addGoal(3, new OwnerHurtTargetGoal(this));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.7, 20) {
 				@Override
 				protected Vector3d getPosition() {
 					Random random = CustomEntity.this.getRNG();
@@ -121,8 +122,7 @@ public class MyLittleGhostieEntity extends MyLittleGhostieModElements.ModElement
 					return new Vector3d(dir_x, dir_y, dir_z);
 				}
 			});
-			this.goalSelector.addGoal(4, new OwnerHurtByTargetGoal(this));
-			this.goalSelector.addGoal(5, new OwnerHurtTargetGoal(this));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(6, new SwimGoal(this));
 			this.goalSelector.addGoal(7, new LeapAtTargetGoal(this, (float) 0.5));
 		}
