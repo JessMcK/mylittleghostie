@@ -137,6 +137,35 @@
           }
         ]
       }
+    },
+    {
+      "name": "MyLittleGhostieOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "my_little_ghostie_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -173,7 +202,7 @@
     {
       "name": "ghostie_living",
       "files": [
-        "ghostie_living_soft"
+        "ghostie_living_short_soft"
       ],
       "category": "neutral",
       "subtitle": "[gentle chiming ghost noises]"
@@ -181,7 +210,7 @@
     {
       "name": "ghostie_hurt",
       "files": [
-        "ghostie_hurt_soft"
+        "ghostie_hurt"
       ],
       "category": "neutral",
       "subtitle": "[ghostie is hurting!]"
@@ -189,7 +218,6 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.ghostie_living_extended": "[gentle ghost chiming noises]",
       "item.my_little_ghostie.my_little_ghostie_spawn_egg": "Ghostie Spawn Egg",
       "subtitles.ghostie_living": "[gentle chiming ghost noises]",
       "subtitles.seize_the_day_newsies": "!!! Now Is The Time To Seize The Day !!!",

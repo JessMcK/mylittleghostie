@@ -24,7 +24,7 @@
     "subtitle": "subtitles.ghostie_living",
     "sounds": [
       {
-        "name": "my_little_ghostie:ghostie_living_soft",
+        "name": "my_little_ghostie:ghostie_living_short_soft",
         "stream": false
       }
     ]
@@ -34,7 +34,7 @@
     "subtitle": "subtitles.ghostie_hurt",
     "sounds": [
       {
-        "name": "my_little_ghostie:ghostie_hurt_soft",
+        "name": "my_little_ghostie:ghostie_hurt",
         "stream": false
       }
     ]

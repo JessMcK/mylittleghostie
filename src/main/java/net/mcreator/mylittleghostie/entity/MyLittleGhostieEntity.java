@@ -49,10 +49,13 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.mylittleghostie.procedures.MyLittleGhostieOnEntityTickUpdateProcedure;
 import net.mcreator.mylittleghostie.entity.renderer.MyLittleGhostieRenderer;
 import net.mcreator.mylittleghostie.MyLittleGhostieModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @MyLittleGhostieModElements.ModElement.Tag
 public class MyLittleGhostieEntity extends MyLittleGhostieModElements.ModElement {
@@ -143,11 +146,6 @@ public class MyLittleGhostieEntity extends MyLittleGhostieModElements.ModElement
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_little_ghostie:ghostie_living"));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_little_ghostie:ghostie_hurt"));
 		}
@@ -234,6 +232,23 @@ public class MyLittleGhostieEntity extends MyLittleGhostieModElements.ModElement
 			double z = this.getPosZ();
 			Entity entity = this;
 			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MyLittleGhostieOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
