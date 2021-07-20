@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -45,14 +46,14 @@ public class MyLittleGhostieModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public MyLittleGhostieModElements() {
-		sounds.put(new ResourceLocation("my_little_ghostie", "ghostie_hurt"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "ghostie_hurt")));
-		sounds.put(new ResourceLocation("my_little_ghostie", "hes_a_pirate_music_box"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "hes_a_pirate_music_box")));
 		sounds.put(new ResourceLocation("my_little_ghostie", "seize_the_day_newsies"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "seize_the_day_newsies")));
-		sounds.put(new ResourceLocation("my_little_ghostie", "ghostie_living_extended"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "ghostie_living_extended")));
+		sounds.put(new ResourceLocation("my_little_ghostie", "hes_a_pirate_music_box"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "hes_a_pirate_music_box")));
+		sounds.put(new ResourceLocation("my_little_ghostie", "ghostie_living"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "ghostie_living")));
+		sounds.put(new ResourceLocation("my_little_ghostie", "ghostie_hurt"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("my_little_ghostie", "ghostie_hurt")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("my_little_ghostie").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
@@ -68,6 +69,7 @@ public class MyLittleGhostieModElements {
 		}
 		Collections.sort(elements);
 		elements.forEach(MyLittleGhostieModElements.ModElement::initElements);
+		MinecraftForge.EVENT_BUS.register(new MyLittleGhostieModVariables(this));
 	}
 
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {

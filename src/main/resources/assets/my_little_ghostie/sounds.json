@@ -1,11 +1,11 @@
 {
-  "ghostie_hurt": {
-    "category": "master",
-    "subtitle": "subtitles.ghostie_hurt",
+  "seize_the_day_newsies": {
+    "category": "record",
+    "subtitle": "subtitles.seize_the_day_newsies",
     "sounds": [
       {
-        "name": "my_little_ghostie:ghostie_hurt",
-        "stream": false
+        "name": "my_little_ghostie:seize_the_day",
+        "stream": true
       }
     ]
   },
@@ -19,22 +19,22 @@
       }
     ]
   },
-  "seize_the_day_newsies": {
-    "category": "record",
-    "subtitle": "subtitles.seize_the_day_newsies",
+  "ghostie_living": {
+    "category": "neutral",
+    "subtitle": "subtitles.ghostie_living",
     "sounds": [
       {
-        "name": "my_little_ghostie:seize_the_day",
-        "stream": true
+        "name": "my_little_ghostie:ghostie_living_soft",
+        "stream": false
       }
     ]
   },
-  "ghostie_living_extended": {
-    "category": "master",
-    "subtitle": "subtitles.ghostie_living_extended",
+  "ghostie_hurt": {
+    "category": "neutral",
+    "subtitle": "subtitles.ghostie_hurt",
     "sounds": [
       {
-        "name": "my_little_ghostie:ghostie_living_extended",
+        "name": "my_little_ghostie:ghostie_hurt_soft",
         "stream": false
       }
     ]

@@ -144,8 +144,7 @@ public class MyLittleGhostieEntity extends MyLittleGhostieModElements.ModElement
 
 		@Override
 		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-					.getValue(new ResourceLocation("my_little_ghostie:ghostie_living_extended"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_little_ghostie:ghostie_living"));
 		}
 
 		@Override

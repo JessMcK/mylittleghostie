@@ -80,7 +80,7 @@
       "value": "Items.RECORD_MELLOHI"
     },
     "livingSound": {
-      "value": "CUSTOM:ghostie_living_extended"
+      "value": "CUSTOM:ghostie_living"
     },
     "hurtSound": {
       "value": "CUSTOM:ghostie_hurt"

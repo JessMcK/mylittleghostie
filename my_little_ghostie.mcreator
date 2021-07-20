@@ -104,17 +104,63 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "stardust_unlocked"
+    },
+    {
+      "name": "EndlessSpamCookies",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endless_spam_cookies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "rand_increment_x",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "rand_increment_z",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    }
+  ],
   "sound_elements": [
     {
-      "name": "ghostie_hurt",
+      "name": "seize_the_day_newsies",
       "files": [
-        "ghostie_hurt"
+        "seize_the_day"
       ],
-      "category": "master",
-      "subtitle": "[ghostie is hurting!]"
+      "category": "record",
+      "subtitle": "!!! Now Is The Time To Seize The Day !!!"
     },
     {
       "name": "hes_a_pirate_music_box",
@@ -125,27 +171,27 @@
       "subtitle": "He\u0027s A Pirate (music box style)"
     },
     {
-      "name": "seize_the_day_newsies",
+      "name": "ghostie_living",
       "files": [
-        "seize_the_day"
+        "ghostie_living_soft"
       ],
-      "category": "record",
-      "subtitle": "!!! Now Is The Time To Seize The Day !!!"
+      "category": "neutral",
+      "subtitle": "[gentle chiming ghost noises]"
     },
     {
-      "name": "ghostie_living_extended",
+      "name": "ghostie_hurt",
       "files": [
-        "ghostie_living_extended"
+        "ghostie_hurt_soft"
       ],
-      "category": "master",
-      "subtitle": "[gentle ghost chiming noises]"
+      "category": "neutral",
+      "subtitle": "[ghostie is hurting!]"
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.ghostie_living_extended": "[gentle ghost chiming noises]",
       "item.my_little_ghostie.my_little_ghostie_spawn_egg": "Ghostie Spawn Egg",
-      "subtitles.ghostie_living": "[gentle ghost chiming noises]",
+      "subtitles.ghostie_living": "[gentle chiming ghost noises]",
       "subtitles.seize_the_day_newsies": "!!! Now Is The Time To Seize The Day !!!",
       "advancements.stardust_unlocked.descr": "Obtain three stardust and create a friend",
       "advancements.stardust_unlocked.title": "Stardust Recipe Unlocked",
